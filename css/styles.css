@@ -58,63 +58,61 @@ main {
     background-color: #f4f4f4;
 }
 
-.intro {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.intro h2 {
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.intro p {
-    color: #555;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #45a049;
-}
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-}
-
-.features article {
-    background-color: white;
-    padding: 1rem;
-    width: 30%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.about-section,
+.gallery-section,
+.product-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
     border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2,
+.gallery-section h2,
+.product-list h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p,
+.product-list p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.product {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     transition: transform 0.3s ease;
 }
 
-.features article:hover {
-    transform: scale(1.05);
+.product:hover {
+    transform: scale(1.02);
 }
 
-.features h3 {
+.product h3 {
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.features p {
-    color: #666;
+/* Gallery */
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-images img {
+    width: 48%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -145,18 +143,19 @@ footer a:hover {
         align-items: center;
     }
 
-    .features {
+    .gallery-images {
         flex-direction: column;
         align-items: center;
     }
 
-    .features article {
-        width: 80%;
-        margin-bottom: 2rem;
+    .gallery-images img {
+        width: 90%;
     }
 
-    form {
-        width: 90%;
+    .about-section,
+    .gallery-section,
+    .product-list {
+        padding: 1rem;
     }
 }
 
